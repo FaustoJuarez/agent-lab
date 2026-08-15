@@ -1,0 +1,5 @@
+{"id":"rag_001","question":"How does A-MEM organize memory?","expected_sources":
+["a_mem.pdf"],"expected_topics":["Zettelkasten","links","memory evolution"],"memory_required":false}
+{"id":"rag_002","question":"Compare dense and sparse retrieval for exact acronyms.","expected_sources":
+["dpr.pdf","notes_ir.md"],"expected_topics":["semantic matching","lexical
+matching"],"memory_required":false}

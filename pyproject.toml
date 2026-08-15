@@ -1,0 +1,25 @@
+[project]
+name = "agent-lab"
+version = "0.0.0"
+description = "Research & Knowledge Agent built incrementally from first principles"
+requires-python = ">=3.12"
+dependencies = [
+    "openai==3.0.0",
+    "pydantic==2.13.4",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==9.1.1",
+]
+
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
