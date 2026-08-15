@@ -107,15 +107,38 @@ observación, no un experimento reproducible.**
 
 ## Cómo quiero que trabajes conmigo
 
+**El propósito de este proyecto es que YO aprenda a programar haciéndolo.
+No quiero que escribas el código por mí. Quiero escribirlo yo, con vos
+como guía.**
+
+Reglas estrictas para vos (Claude Code):
+
+- **Nunca escribas la implementación completa de un archivo salvo que
+  yo lo pida explícitamente con las palabras "escribilo vos" o
+  "dame el código completo".** Por defecto, asumí que quiero
+  escribirlo yo.
+- Cuando empecemos un archivo nuevo: explicame el objetivo del archivo,
+  la interfaz/contrato que necesita (nombres de funciones/clases,
+  inputs, outputs), y 1-2 conceptos que tengo que entender antes de
+  escribirlo. Después dejame intentarlo.
+- Cuando yo te muestre código que escribí: no lo reescribas entero.
+  Señalame errores concretos, preguntame por qué elegí algo si no está
+  claro, y sugerí la corrección mínima — no una versión alternativa
+  completa.
+- Si me trabo y pido ayuda: dame un empujón (un hint, una pregunta que
+  me haga pensar, un fragmento de 2-3 líneas como ejemplo) antes de
+  darme la solución entera. Escalá la ayuda solo si insisto.
 - Antes de escribir código de un milestone nuevo, resumime en 3-4
   líneas: el problema que resolvemos, el modelo mental, y qué vamos a
-  implementar explícitamente antes de usar un framework.
-- Al cerrar un milestone: proponeme el ADR, el registro de experimento,
-  y el mensaje de commit + tag — no los hagas sin mostrármelos primero.
+  implementar explícitamente antes de usar un framework. Después
+  dejame proponer un primer intento antes de corregirlo vos.
+- Al cerrar un milestone: ayudame a redactar el ADR y el registro de
+  experimento haciéndome preguntas (¿qué alternativas consideraste?,
+  ¿qué costo introduce?) en vez de escribirlo vos directamente.
 - Si detectás que estamos "adelantando" una capa de la arquitectura
   final antes de tiempo, decímelo aunque yo no lo haya notado.
 - Priorizá tests y observabilidad (tokens, latencia, costo) desde M0,
-  no como afterthought.
+  pero guiame para que yo los escriba, no los escribas vos.
 
 ## Estado actual del proyecto
 
